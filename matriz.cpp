@@ -16,10 +16,14 @@ int main()
 {
 	int matriz[n][n];
 	int ren = 0, col = 0;
+	int sec = 1;
+
 	while (ren < n) {
 		while (col < n) {
-			printf("captura el elemento [%d,%d] ", ren, col);
-			scanf_s("%d", &matriz[ren][col]);
+			//printf("captura el elemento [%d,%d] ", ren, col);
+			//scanf_s("%d", &matriz[ren][col]);
+			matriz[ren][col] = sec;
+			sec++;
 			col++;
 		}
 		ren++; col = 0;
@@ -38,4 +42,3 @@ int main()
 
 
 }
-
